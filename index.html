@@ -3,62 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menú – Wendover Arms Hotel</title>
+  <title>Menú BBQ – Wendover Arms Hotel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 20px;
-      background-color: #fefefe;
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(135deg, #ffe8d6, #ffcccb);
       color: #333;
     }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      margin-top: 3rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
     h1 {
+      text-align: center;
+      font-size: 2.2rem;
       color: #c0392b;
-      font-size: 28px;
+      margin-bottom: 0.5rem;
     }
+
+    h1::after {
+      content: "🔥";
+      margin-left: 0.5rem;
+    }
+
     h2 {
+      font-size: 1.4rem;
       color: #555;
-      margin-top: 30px;
+      margin-top: 2rem;
+      border-bottom: 2px solid #f4a261;
+      padding-bottom: 5px;
     }
+
     ul {
       list-style: none;
       padding-left: 0;
+      margin: 0;
     }
+
     li {
-      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 0;
       border-bottom: 1px solid #eee;
+      font-size: 1rem;
     }
+
     .precio {
-      float: right;
-      color: #888;
+      color: #f4a261;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>🍽️ Wendover Arms Hotel – Menú</h1>
+  <div class="container">
+    <h1>Menú BBQ – Wendover Arms Hotel</h1>
 
-  <h2>🥘 Tapas y Platos</h2>
-  <ul>
-    <li>Carne En Salsa / Meat in Sauce <span class="precio">£3.50</span></li>
-    <li>Ensaladilla Rusa / Spanish Russian Salad <span class="precio">£3.00</span></li>
-    <li>Hamburguesa con Queso / Cheeseburger <span class="precio">Variable</span></li>
-    <li>Patata con Alioli / Alioli Potatoes <span class="precio">£2.50</span></li>
-    <li>Tapas de Barbacoa / BBQ Tapas <span class="precio">£4.00</span></li>
-    <li>Pork Shoulder / Carne de Cerdo <span class="precio">£5.50</span></li>
-    <li>Panceta / Bacon <span class="precio">£4.00</span></li>
-    <li>Alitas de Pollo / Chicken Wings <span class="precio">£4.00</span></li>
-  </ul>
+    <h2>🥘 Tapas y Platos</h2>
+    <ul>
+      <li>Carne En Salsa / Meat in Sauce <span class="precio">£3.50</span></li>
+      <li>Ensaladilla Rusa / Spanish Russian Salad <span class="precio">£3.00</span></li>
+      <li>Hamburguesa con Queso / Cheeseburger <span class="precio">Variable</span></li>
+      <li>Patata con Alioli / Alioli Potatoes <span class="precio">£2.50</span></li>
+      <li>Tapas de Barbacoa / BBQ Tapas <span class="precio">£4.00</span></li>
+      <li>Pork Shoulder / Carne de Cerdo <span class="precio">£5.50</span></li>
+      <li>Panceta / Bacon <span class="precio">£4.00</span></li>
+      <li>Alitas de Pollo / Chicken Wings <span class="precio">£4.00</span></li>
+    </ul>
 
-  <h2>🍢 Pinchitos / Skewers</h2>
-  <ul>
-    <li>Meat Skewer / Pincho de Carne <span class="precio">£3.50</span></li>
-    <li>Chicken Skewer / Pincho de Pollo <span class="precio">£3.50</span></li>
-    <li>Mix Skewer / Pincho Mixto <span class="precio">£4.00</span></li>
-    <li>XL Pinchito <span class="precio">£5.00</span></li>
-  </ul>
+    <h2>🍢 Pinchitos / Skewers</h2>
+    <ul>
+      <li>Meat Skewer / Pincho de Carne <span class="precio">£3.50</span></li>
+      <li>Chicken Skewer / Pincho de Pollo <span class="precio">£3.50</span></li>
+      <li>Mix Skewer / Pincho Mixto <span class="precio">£4.00</span></li>
+      <li>XL Pinchito <span class="precio">£5.00</span></li>
+    </ul>
 
-  <h2>🍰 Postres</h2>
-  <ul>
-    <li>Tarta de Chocolate / Slice of Chocolate Cake <span class="precio">£2.00</span></li>
-  </ul>
+    <h2>🍰 Postres</h2>
+    <ul>
+      <li>Tarta de Chocolate / Chocolate Cake Slice <span class="precio">£2.00</span></li>
+    </ul>
+  </div>
 </body>
 </html>
